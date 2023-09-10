@@ -9,4 +9,5 @@ namespace EmployeeOOP.Class
     public class Date
     {
     }
+    public class Person { }
 }
