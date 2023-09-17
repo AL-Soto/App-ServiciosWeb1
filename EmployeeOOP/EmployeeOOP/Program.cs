@@ -4,6 +4,8 @@ try
 {
     //Declaracion de variables
     int day, month, year;
+    string firstName, lastName; 
+    decimal salary;
 
     Console.WriteLine("Hello, World! this is mi app C#");
     Console.WriteLine("-------------------");
@@ -22,6 +24,27 @@ try
     Console.WriteLine("\n");
     Console.WriteLine(DateObject.ToString());
 
+    //Har
+    Console.WriteLine("Ingrese el nombre completo: ");
+    firstName = Console.ReadLine();
+    
+    Console.WriteLine("Ingresar Apellidos: ");
+    lastName = Console.ReadLine();
+
+    Console.WriteLine("Ingresar salario devengado: ");
+    salary = Decimal.Parse(Console.ReadLine());
+
+    SalaryEmployee salaryEmployee = new SalaryEmployee()
+    {
+        Id = 123456,
+        FirstName = firstName,
+        LastName = lastName,
+        BirthDate = DateObject,
+        IsActive = true,
+        Salary = salary,
+    };
+
+    Console.WriteLine(salaryEmployee.ToString());
 }
 catch(Exception ex)
 {
