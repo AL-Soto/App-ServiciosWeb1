@@ -10,7 +10,7 @@ namespace EmployeeOOP.Class
     {
         #region Properties
         public decimal commisionPercentaje { get; set; }
-        public int sales { get; set; }
+        public decimal sales { get; set; }
         #endregion
 
         #region Methods
@@ -26,7 +26,7 @@ namespace EmployeeOOP.Class
         {
             return $"{base.ToString()}" +
                 $"Porcentaje de comision: {commisionPercentaje}" +
-                $"Numero de ventas: {sales}"
+                $"Valor de ventas: {sales}"
                 ;
         }
         #endregion
